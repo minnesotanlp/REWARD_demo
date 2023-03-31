@@ -20,6 +20,14 @@ color: #3366CC;
 .data {
 color: #FF9900;
 }
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.video {
+  width: 33%;
+}
 </style>
   
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -76,24 +84,17 @@ feedback and suggestions on an end-to-end level. <br>
   <!-- Results -->
 <h2>Repaly collected writing trajectories</h2>
 
-<br><br>
 <!-- Main Results Figure -->
-<div style="text-align: center;">
-<video width="420" height="540" controls>
+<div class="video-container" style="text-align: center;">
+<video class="video" width="420" height="540" controls>
   <source src="images/example_1.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <video width="420" height="540" controls>
+  <video class="video" width="420" height="540" controls>
   <source src="images/example_2.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-  <video width="420" height="540" controls>
-  <source src="images/example_3.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <video width="420" height="540" controls>
+  <video class="video" width="420" height="540" controls>
   <source src="images/example_4.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
