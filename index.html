@@ -43,19 +43,7 @@ color: #FF9900;
 <span style="font-size: 18px; line-height: 1.5em;">Visual replay user's writing based on recorded writer actions</span><br>
 <span style="font-size: 18px; line-height: 1.5em;">University of Minnesota-Twin Cities</span>
 <hr>
-  
-Link to paper (to be added).
-  
-<p>
-@inproceedings{
-  koo2023decoding,
-    title={Decoding the End-to-end Writing Process in Scholarly Manuscripts via Writer-action Taxonomy},
-    author={Ryan Hyunkyo Koo and Anna Martin and Linghe Wang and Dongyeop Kang},
-    booktitle={The Second Workshop on Intelligent and Interactive Writing Assistants},
-    year={2023},
-    url={https://openreview.net/forum?id=I3jP1hYK7mg}
-  }
-</p>
+
 
 <!-- Goal -->
 <h2>Abstract</h2>
@@ -86,15 +74,15 @@ feedback and suggestions on an end-to-end level. <br>
 
 <!-- Main Results Figure -->
 <div class="video-container" style="text-align: center;">
-<video class="video" width="420" height="540" controls>
+<video class="video" width="420" height="540" controls autoplay>
   <source src="images/example_1.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-  <video class="video" width="420" height="540" controls>
+  <video class="video" width="420" height="540" controls autoplay>
   <source src="images/example_2.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-  <video class="video" width="420" height="540" controls>
+  <video class="video" width="420" height="540" controls autoplay>
   <source src="images/example_4.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
@@ -185,19 +173,39 @@ session. In total, we collected four writing trajectories, including
 46 discontinuous edits with 3290 recorded actions. The detailed
 statistics are in Appendix C.
 
-<h4>Annotation Schema</h4>
+<h4>Annotation Schema and result</h4>
 Inspired by Flower and Hayes’ cognitive
-process model, our annotation schema contains two levels of granularity
+process model, our annotation schema (Figure 2) contains two levels of granularity
 in order to accurately reflect the hierarchical and recursive
-aspects of the writing process (Fig 4). The higher level includes
+aspects of the writing process. The higher level includes
 Planning, Implementation, and Revision. These labels are used
 to denote the general process that the writer is working in. The
 lower level categorizations include {idea generation, concept
 organization}, {lexical_chaining}, and {syntactic, lexical,
-structural} for each of the three processes respectively
-<br><br>
+structural} for each of the three processes respectively.
+  Three of the authors annotated the samples that were gathered. One author annotated sample 1 in the
+course of developing the annotation guidelines. Figure 3 illustrates
+the first participant’s writing trajectory. Each of the other three
+samples was annotated by two different authors such that each
+author annotated two samples, and no two samples had the same
+pair of annotators.
+  <br><br>
+  <div class="picture-container" style="text-align: center;" >
+<img style="height: 350px; " alt="" src="images/taxonomy.png">
+    <img style="height: 200px; " alt="" src="images/participant.png">
+</div>
+<br>
 
-<br><br>
+<h2>bibtex citation</h2>
+@inproceedings{
+  koo2023decoding,
+    title={Decoding the End-to-end Writing Process in Scholarly Manuscripts via Writer-action Taxonomy},
+    author={Ryan Hyunkyo Koo and Anna Martin and Linghe Wang and Dongyeop Kang},
+    booktitle={The Second Workshop on Intelligent and Interactive Writing Assistants},
+    year={2023},
+    url={<a href="https://arxiv.org/abs/2304.00121">https://arxiv.org/abs/2304.00121</a>}
+  }
+
   <hr>
   <footer> 
   <p>© Ryan Koo*, Anna Martin*, Linghe Wang, Dongyeop Kang</p>
